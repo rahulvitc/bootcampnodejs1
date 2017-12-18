@@ -1,0 +1,12 @@
+<% include partials/header %>
+
+
+<h1>Hello POSTS:(using for and foreach loop)</h1>
+<h4>for loop:</h4>
+<%for(var i=0;i<POSTS.length;i++){ %>
+	<li><%= POSTS[i].title +' - - '+POSTS[i].author %></li>
+<% } %>
+<h4>foreach loop:</h4>
+<% POSTS.forEach(function(POSTS){ %>
+	<li><%= POSTS.title +' - - '+POSTS.author %></li>
+<% }) %>

@@ -1,0 +1,13 @@
+<% friends.forEach(function(friend){ %>
+	<li><b> friends are: </b> <%= friend %> </li>
+<% }); %>
+<fieldset style="width:240px">
+<legend> Add friends using post method:</legend>
+<form action="/addFriend" method="POST">
+	<input type="text" placeholder="name" name="friendname" required>
+	<input type="submit" value="submit">
+</form>
+</fieldset>
+
+
+<a href='https://play.google.com/store/apps/details?id=co.efgh.user&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
